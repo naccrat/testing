@@ -1,0 +1,14 @@
+---
+label: Project
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  name: title
+  label: Title
+- type: textarea
+  name: description
+  label: Description
+- type: file
+  name: preview
+  label: Preview
