@@ -13,4 +13,5 @@ fields:
   name: preview
   label: Preview
 pages:
+- _posts/test-title-three.md
 - _posts/2019-02-27-test-title-two.md
