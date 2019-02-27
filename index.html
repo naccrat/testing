@@ -32,10 +32,10 @@ layout: default
             <!-- Project One Row -->
             <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
                   <div class="col-lg-4">
-                        {% for post in site.post reversed %}
+                        {% for post in site.posts reversed %}
                               <div class="col-md-4">
                                     
-                                    <img class="" src="{{ post.preview }}">
+                                    <img class="img-fluid" src="{{ post.preview }}">
                                     <h2 class="mb-3">
                                           <a class="" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
                                     </h2>
@@ -46,33 +46,6 @@ layout: default
                               </div>
                         {% endfor %}
                   </div>
-            </div>
-
-            <!-- Project One Row -->
-            <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-                  <div class="col-lg-6">
-                        <div class="text-center h-100 project">
-                              <div class="d-flex h-100">
-                                    <div class="project-text w-100 my-auto text-center text-lg-right">
-                                          <h4>Share your story privately or with the world. Your data is always secure.</h4>
-                                          <!-- <p class="mb-0 text-white-50">Quickly add an event to capture the moment and location.</p> -->
-                                          <hr class="d-none d-lg-block mb-0 mr-0">
-                                    </div>
-                              </div>
-                        </div>
-                  </div>
-                  <div class="col-lg-6">
-                        <div class="text-center h-100 project">
-                              <div class="d-flex h-100">
-                                    <div class="project-text w-100 my-auto text-center text-lg-left">
-                                          <h4>You will always own your stories and data, export the data anytime.</h4>
-                                          <!-- <p class="mb-0 text-white-50">Create an amazing story to share with family and friends&mdash;or the world</p> -->
-                                          <hr class="d-none d-lg-block mb-0 ml-0">
-                                    </div>
-                              </div>
-                        </div>
-                  </div>
-                  
             </div>
 
       </div>
