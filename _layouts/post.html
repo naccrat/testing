@@ -1,0 +1,42 @@
+---
+layout: default
+---
+<div role="main" class="container">
+  <div class="row">
+    <div class="blog-main">
+      <div class="blog-post">
+        <figure>
+          <img class="" src="{{ page.preview }}"/>
+        </figure>
+        <div class="blog-post-meta">
+            <h2 class="blog-post-title">{{ page.title }}</h2>
+            <h5 class="blog-post-subtitle"> {{ page.subtitle }}</h5>
+            
+            <div class="blog-post-author-avatar">
+              <img src="{{ page.author_avatar }}" class="rounded-circle" />
+            </div>
+            
+            <p class="blog-post-author"><span>By</span> <a href="#">{{ page.author }}</a></p>
+            <p class="blog-post-date"><time datetime="{{ page.date }}">{{ page.date | date: "%B %-d, %Y" }}</time></p> 
+        </div>
+        <div class="blog-post-content">
+          
+          {{ content }}
+        
+        </div>
+      </div><!-- /.blog-post -->
+
+      <nav class="blog-pagination">
+          {% if page.next.url %}
+            <a class="btn btn-outline-primary" href="{{ page.next.url | prepend: site.baseurl }}">&laquo; Prev</a>
+          {% endif %}
+          {% if page.previous.url %}
+            <a class="btn btn-outline-primary" href="{{ page.previous.url | prepend: site.baseurl }}">Next &raquo;</a>
+          {% endif %}
+      </nav>
+
+    </div> <!-- /.col -->
+  </div> <!-- /.row -->
+</div> 
+
+

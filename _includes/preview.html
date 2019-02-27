@@ -1,0 +1,18 @@
+<div class="row">
+    {% for block in site.data.stories.story %}
+    <div class="col-md-6 card-container">
+        <a href="{{ block.link }}">
+        <div class="card mb-5">
+            <img class="img-fluid" src="{{ block.image }}">
+            <div class="card-body">
+                <h1>{{ block.title }}</h1>  
+                {% if block.subtitle %}
+                <h4 class="card-subtitle font-italic"> {{ block.subtitle }}</h4>
+                {% endif %}
+                <time datetime="{{ block.dates }}">{{ block.dates }}</time>
+            </div> 
+        </div>
+        </a>
+    </div>
+    {% endfor %}
+</div>

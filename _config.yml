@@ -1,0 +1,45 @@
+# Site settings
+title: Aweigh
+email: your-email@domain.com
+description: > # this means to ignore newlines until "baseurl:"
+  A simple elegant travel journal to help you tell your story.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://aweighapp.com/" # the base hostname & protocol for your site
+twitter_username: 
+dribbble_username: 
+
+projects:
+  output: true
+  permalink: /project/:slug
+posts:
+    output: true
+    permalink: /blog/:slug
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+
+# Build settings
+markdown: kramdown
+permalink: none

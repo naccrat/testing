@@ -1,0 +1,119 @@
+---
+layout: default
+---
+
+<!-- Header -->
+<header class="masthead">
+      <div class="container d-flex h-100 align-items-center">
+            <div class="mx-auto text-center">
+                  <h2 class="mx-auto mt-2 mb-5">Capture adventures as you experience it.</h2>
+                  <a href="#Contact" class="btn btn-primary js-scroll-trigger">Get on the waiting list</a>
+            </div>
+      </div>
+</header>
+
+<!-- About Section -->
+<section id="About" class="about-section text-center">
+      <div class="container">
+            <div class="row">
+                  <div class="col-lg-8 mx-auto">
+                        <h1 class="text-white mb-4">Capture adventures as you experience them.</h1>
+                        <p class="text-white-50">A travel journal app designed with the traveler in mind to easily capture and share your story.</p>
+                  </div>
+            </div>
+            <img src="img/main.png" class="img-fluid" alt="">
+      </div>
+</section>
+
+<!-- Projects Section -->
+<section id="Projects" class="projects-section bg-light">
+      <div class="container">
+
+            <!-- Project One Row -->
+            <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+                  <div class="col-lg-4">
+                        {% for post in site.posts reversed %}
+                              <div class="col-md-4">
+                                    
+                                    <img class="" src="{{ post.preview }}">
+                                    <h2 class="mb-3">
+                                          <a class="" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                                    </h2>
+                                    <h4 class="card-subtitle"> {{ post.cost }}</h4>
+                                    <!-- <div class="mb-3 blog-post-date"><time datetime="{{ post.date }}">{{ post.date | date: "%b %-d, %Y" }}</time></div> -->
+                                    <p class="card-text mt-2">{{ post.excerpt  | truncate: 85}}</p>
+                                          
+                              </div>
+                        {% endfor %}
+                  </div>
+                  <div class="col-lg-4">
+                        
+                  </div>
+                  <div class="col-lg-4">
+
+                  </div>
+            </div>
+
+            <!-- Project One Row -->
+            <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+                  <div class="col-lg-6">
+                        <div class="text-center h-100 project">
+                              <div class="d-flex h-100">
+                                    <div class="project-text w-100 my-auto text-center text-lg-right">
+                                          <h4>Share your story privately or with the world. Your data is always secure.</h4>
+                                          <!-- <p class="mb-0 text-white-50">Quickly add an event to capture the moment and location.</p> -->
+                                          <hr class="d-none d-lg-block mb-0 mr-0">
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+                  <div class="col-lg-6">
+                        <div class="text-center h-100 project">
+                              <div class="d-flex h-100">
+                                    <div class="project-text w-100 my-auto text-center text-lg-left">
+                                          <h4>You will always own your stories and data, export the data anytime.</h4>
+                                          <!-- <p class="mb-0 text-white-50">Create an amazing story to share with family and friends&mdash;or the world</p> -->
+                                          <hr class="d-none d-lg-block mb-0 ml-0">
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+                  
+            </div>
+
+      </div>
+</section>
+
+<!-- Signup Section -->
+<section id="Contact" class="signup-section">
+<div class="container">
+      <div class="row">
+            <div class="col-md-10 col-lg-8 mx-auto text-center">
+
+                  <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+                  <p class="text-white mb-5">Ready to get started on your next project. Contact us today.</p>
+                  
+                  <form class="form-inline d-flex" name="waiting list" method="POST" data-netlify="true" id="waiting-list">
+                        <input type="email" name="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
+                        <button type="submit" class="btn btn-primary mx-auto">Submit</button>
+                  </form>
+
+            </div>
+      </div>
+</div>
+</section>
+
+<!-- Social Section -->
+<section class="contact-section bg-black">
+      <div class="container">
+            <div class="social d-flex justify-content-center">
+                  {% for url in site.data.settings.social_settings %}
+                  {% if url[1] != '' %}
+                        <a href="{{ url[1] }}" target="_blank" class="mx-2 socials__item__link" title="{{ url[0] | remove: '_url' | replace: '-', ' ' | capitalize }}">
+                        <i class="fab fa-{{ url[0] | replace: 'facebook', 'facebook-f' | remove: '_url' }}" aria-hidden="true"></i>
+                  </a>
+                  {% endif %}
+                  {% endfor %}
+            </div>
+      </div>
+</section>
