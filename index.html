@@ -29,24 +29,24 @@ layout: default
 <section id="Projects" class="projects-section bg-light">
       <div class="container">
 
-            <!-- Project One Row -->
-            <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-                  <div class="col-lg-4">
-                        {% for post in site.posts reversed %}
-                              <div class="col-md-4">
-                                    
-                                    <img class="img-fluid" src="{{ post.preview }}">
-                                    <h2 class="mb-3">
-                                          <a class="" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                                    </h2>
-                                    <h4 class="card-subtitle"> {{ post.cost }}</h4>
-                                    <!-- <div class="mb-3 blog-post-date"><time datetime="{{ post.date }}">{{ post.date | date: "%b %-d, %Y" }}</time></div> -->
-                                    <p class="card-text mt-2">{{ post.excerpt  | truncate: 85}}</p>
-                                          
-                              </div>
-                        {% endfor %}
-                  </div>
+<!-- Project One Row -->
+
+<div class="row">
+    <div class="col-12">
+        <div class="card-deck">
+                {% for post in site.posts %}
+            <div class="card shadow-sm">
+                <img class="card-img-top" src="{{ post.preview }}" alt="{{ post.title }}">
+                <div class="card-body">
+                    <h5 class="card-title"><a class="" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                </div>
             </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
 
       </div>
 </section>
