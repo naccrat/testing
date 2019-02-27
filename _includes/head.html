@@ -3,7 +3,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="Tony Naccarato">
+    <meta name="author" content="{{ site.data.settings.basic_settings.author_name }}">
     
     <title>{{ site.data.settings.basic_settings.site_title }}</title>
     
@@ -12,21 +12,10 @@
     
     <!-- Custom fonts for this template -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,600,600i,700" rel="stylesheet">
+    {{ site.data.settings.font_settings.font_embed }}
 
     <!-- Custom styles for this template -->
     <link href="css/grayscale.css" rel="stylesheet">
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133651612-1"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-133651612-1');
-    </script>
     
     <link rel="shortcut icon" href="{{ '/img/favicon.ico' | prepend: site.baseurl }}" type="image/x-icon">
     <link rel="icon" href="{{ '/img/favicon.ico' | prepend: site.baseurl }}" type="image/x-icon">
