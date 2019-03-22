@@ -1,8 +1,8 @@
 # Site
-name: "Mediumish"
-title: "Mediumish"
-description: "Jekyll template, Medium styled, free for bloggers."
-logo: 'assets/images/logo.png'
+name: "Art by Megan"
+title: "Art by Megan"
+description: "Watercolor art by Megan Naccarato"
+logo: 'assets/images/'
 favicon: 'assets/images/logo.png'
 baseurl: 
 google_analytics: ''
@@ -13,22 +13,14 @@ permalink: /:title/
 
 # Authors
 authors:
-  sal:
-    name: Sal
-    display_name: Sal
-    gravatar: e56154546cf4be74e393c62d1ae9f9d4
-    email: wowthemesnet@gmail.com
-    web: https://www.wowthemes.net
-    twitter: https://twitter.com/wowthemesnet
-    description: "Author of Mediumish, a Bootstrap Medium styled template available for WordPress, HTML, Ghost and Jekyll. You are currently previewing Jekyll template demo."
-  john:
-    name: John
-    display_name: John
-    gravatar: b1cc14991db7a456fcd761680bbc8f81
-    email: wowthemesnet@gmail.com
-    web: https://www.wowthemes.net
-    twitter: https://twitter.com/wowthemesnet
-    description: "This is the author box. Write a short description of the author here. You are currently previewing Mediumish demo, a Jekyll template compatible with Github pages."
+  Megan:
+    name: Megan
+    display_name: Megan
+    gravatar: 
+    email: 
+    web: 
+    twitter: 
+    description: "My name is Megan Naccarato and I have always loved art. I started creating with watercolors a few years ago and fell in love with the process. I really enjoy creating family portraits and character art like Marvel and Star Wars characters."
 
 # Plugins
 plugins: 
