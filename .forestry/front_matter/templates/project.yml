@@ -1,7 +1,6 @@
 ---
 label: Project
 hide_body: false
-is_partial: false
 fields:
 - type: text
   name: title
@@ -12,7 +11,3 @@ fields:
 - type: file
   name: preview
   label: Preview
-pages:
-- _posts/five.md
-- _posts/another-test-four.md
-- _posts/2019-02-27-test-title-two.md
