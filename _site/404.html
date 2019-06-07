@@ -4,11 +4,24 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-<link rel="icon" href="{{ site.baseurl }}/assets/images/logo.png">
+<link rel="icon" href="/assets/images/logo.png">
     
-<title>{{ page.title }} | {{site.name}}</title>
+<title>404 | Art by Megan</title>
         
-{% seo %}
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>404 | Art by Megan</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="404" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Watercolor art by Megan Naccarato" />
+<meta property="og:description" content="Watercolor art by Megan Naccarato" />
+<link rel="canonical" href="http://localhost:4000/404.html" />
+<meta property="og:url" content="http://localhost:4000/404.html" />
+<meta property="og:site_name" content="Art by Megan" />
+<script type="application/ld+json">
+{"description":"Watercolor art by Megan Naccarato","@type":"WebPage","url":"http://localhost:4000/404.html","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/"}},"headline":"404","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
     
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     
@@ -16,28 +29,18 @@
     
 <link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet">
     
-<link href="{{ site.baseurl }}/assets/css/screen.css" rel="stylesheet">
+<link href="/assets/css/screen.css" rel="stylesheet">
     
-<link href="{{ site.baseurl }}/assets/css/main.css" rel="stylesheet">
+<link href="/assets/css/main.css" rel="stylesheet">
     
-<script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
+<script src="/assets/js/jquery.min.js"></script>
     
 </head>
     
-{% if jekyll.environment == 'production' %}    
-<!-- change your GA id in _config.yml -->
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-ga('create', '{{site.google_analytics}}', 'auto');
-ga('send', 'pageview');
-</script>
-{% endif %}
+
     
-{% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
-<body class="{{layout}}">
+
+<body class="layout-default">
 
     
 <!-- Begin Menu Navigation
@@ -47,9 +50,9 @@ ga('send', 'pageview');
     <div class="container pr-0">    
     
     <!-- Begin Logo -->
-    <a class="navbar-brand" href="{{ site.baseurl }}/">
-    <!-- <img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}"> -->
-    {{ site.name }}
+    <a class="navbar-brand" href="/">
+    <!-- <img src="/assets/images/" alt="Art by Megan"> -->
+    Art by Megan
     </a>
     <!-- End Logo -->
   
@@ -64,23 +67,39 @@ ga('send', 'pageview');
         
             <ul class="navbar-nav ml-auto">
                 
-                {% if page.url == "/" %}
-                <li class="nav-item active">
-                {% else %}
+                
                 <li class="nav-item">
-                {% endif %}
-                <a class="nav-link" href="{{ site.baseurl }}/index.html">Work</a>
+                
+                <a class="nav-link" href="/index.html">Work</a>
                 </li>
                 
-                {% if page.url == "/about.html" %}
-                <li class="nav-item active">
-                {% else %}
+                
                 <li class="nav-item">
-                {% endif %}
-                <a class="nav-link" href="{{ site.baseurl }}/about">About</a>
+                
+                <a class="nav-link" href="/about">About</a>
                 </li>
                 
-                {% include search-lunr.html %}
+                <script src="/assets/js/lunr.js"></script>
+
+
+<style>
+    .lunrsearchresult .title {color: #d9230f;}
+    .lunrsearchresult .url {color: silver;}
+    .lunrsearchresult a {display: block; color: #777;}
+    .lunrsearchresult a:hover, .lunrsearchresult a:focus {text-decoration: none;}
+    .lunrsearchresult a:hover .title {text-decoration: underline;}
+</style>
+
+
+<form class="bd-search" onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
+    <input type="text" class="form-control text-small launch-modal-search" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Type and enter..."/>
+</form>
+
+<div id="lunrsearchresults">
+    <ul></ul>
+</div>
+
+<script src="/assets/js/lunrsearchengine.js"></script>
                 
             </ul>		
         
@@ -102,9 +121,9 @@ ga('send', 'pageview');
 <!-- Site Title
 ================================================== -->
 <div class="mainheading">
-    <h1 class="sitetitle">{{ site.name }}</h1>
+    <h1 class="sitetitle">Art by Megan</h1>
     <p class="lead">
-         {{ site.description }}
+         Watercolor art by Megan Naccarato
     </p>
 </div>
 
@@ -113,7 +132,11 @@ ga('send', 'pageview');
 <!-- Content
 ================================================== --> 
 <div class="main-content">
-    {{ content }}
+    <div class="text-center">
+<h1 class="display-1 mt-5 mb-4"><span class="badge badge-danger">404</span> Page does not exist!</h1>
+<p>Please use the search bar at the top or visit our <a href="/">homepage</a>!</p>
+</div>
+
 </div>
 
 <!-- Begin Footer
@@ -122,7 +145,7 @@ ga('send', 'pageview');
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-sm-6 text-center text-lg-left">
-                 Copyright © {{ site.time | date: "%Y" }} {{ site.name }} 
+                 Copyright © 2019 Art by Megan 
             </div>
         </div>
     </div>
@@ -140,11 +163,11 @@ ga('send', 'pageview');
 
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     
-<script src="{{ site.baseurl }}/assets/js/mediumish.js"></script>
+<script src="/assets/js/mediumish.js"></script>
 
-<script src="{{ site.baseurl }}/assets/js/ie10-viewport-bug-workaround.js"></script> 
+<script src="/assets/js/ie10-viewport-bug-workaround.js"></script> 
     
-<script id="dsq-count-scr" src="//{{site.disqus}}.disqus.com/count.js"></script>
+<script id="dsq-count-scr" src="//.disqus.com/count.js"></script>
     
 </body>
 </html>
