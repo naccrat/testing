@@ -11,3 +11,5 @@ fields:
 - type: file
   name: preview
   label: Preview
+pages:
+- _posts/iron-man-watercolor.md
