@@ -18,7 +18,7 @@ var documents = [{
     "id": 3,
     "url": "http://localhost:4000/",
     "title": "Home",
-    "body": "   Items for Sale:                                                                                                                                                                                   Custom Watercolor Family Portraits              :               An 8” x 10” watercolor piece on high quality watercolor paper. A simple and unique way of capturing your family and the perfect gift for. . . :                                                All Projects:                              Iron Man - Watercolor     &gt;#    :             "
+    "body": "   Items for Sale:                                                                                                                                                                                   Custom Watercolor Family Portraits              :               An 8” x 10” watercolor piece on high quality watercolor paper. A simple and unique way of capturing your family and the perfect gift for. . . :                                                All Projects:                              Iron Man - Watercolor   :             "
     }, {
     "id": 4,
     "url": "http://localhost:4000/robots.txt",
