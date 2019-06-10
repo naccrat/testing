@@ -22,3 +22,5 @@ fields:
   label: Layout
   hidden: true
   default: post
+pages:
+- _posts/captain-america-watercolor.md
