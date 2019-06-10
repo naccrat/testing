@@ -8,8 +8,17 @@ fields:
 - type: textarea
   name: description
   label: Description
+- name: categories
+  type: tag_list
+  default: []
+  label: Categories
 - type: file
-  name: preview
-  label: Preview
-pages:
-- _posts/iron-man-watercolor.md
+  name: image
+  label: Image
+- name: layout
+  type: text
+  config:
+    required: false
+  label: Layout
+  hidden: true
+  default: post
