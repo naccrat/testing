@@ -23,5 +23,6 @@ fields:
   hidden: true
   default: post
 pages:
+- _posts/black-widow-watercolor.md
 - _posts/thor-watercolor.md
 - _posts/captain-america-watercolor.md
