@@ -38,7 +38,20 @@ post_class: post-template
                 <!-- Post Title -->
 				<h1 class="posttitle">{{ page.title }}</h1> 
                 
-			</div>
+      </div>
+      
+      <!-- Post Categories -->
+			<div class="after-post-cats">
+          <ul class="tags mb-4">
+                      {% assign sortedCategories = page.categories | sort %}
+                      {% for category in sortedCategories %}
+                      <li>                        
+                       <a class="smoothscroll" href="{{site.baseurl}}/categories#{{ category | replace: " ","-" }}">{{ category }}</a>
+                      </li>
+                      {% endfor %}
+          </ul>
+        </div>
+        <!-- End Categories -->
 
 			<!-- Post Featured Image -->
 			{% if page.image %}<img class="featured-image img-fluid" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ page.image | absolute_url }}{% endif %}" alt="{{ page.title }}">{% endif %}
@@ -53,19 +66,8 @@ post_class: post-template
             {% endif %}
             <!-- End Toc -->
 
-      <!-- Post Categories -->
-			<div class="after-post-cats">
-				<ul class="tags mb-4">
-                    {% assign sortedCategories = page.categories | sort %}
-                    {% for category in sortedCategories %}
-                    <li>                        
-                     <a class="smoothscroll" href="{{site.baseurl}}/categories#{{ category | replace: " ","-" }}">{{ category }}</a>
-                    </li>
-                    {% endfor %}
-				</ul>
-			</div>
-      <!-- End Categories -->
-      
+
+
 			<!-- Post Content -->
 			<div class="article-post">
 				{{content}}
@@ -89,7 +91,7 @@ post_class: post-template
             </p>
             
 			<!-- Post Categories -->
-			<div class="after-post-cats">
+			<!-- <div class="after-post-cats">
 				<ul class="tags mb-4">
                     {% assign sortedCategories = page.categories | sort %}
                     {% for category in sortedCategories %}
@@ -98,7 +100,7 @@ post_class: post-template
                     </li>
                     {% endfor %}
 				</ul>
-			</div>
+			</div> -->
       <!-- End Categories -->
             
             <!-- Post Tags -->

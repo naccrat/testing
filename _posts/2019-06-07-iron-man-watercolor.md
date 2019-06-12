@@ -1,7 +1,10 @@
 ---
 layout: post
-title: Iron Man - Watercolor
+title: Iron Man
 author: Megan
-categories: [Watercolor]
+categories:
+  - Watercolor
+  - Iron Man
+  - Marvel
 image: /uploads/580095520.285756.jpg
 ---

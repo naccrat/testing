@@ -18,7 +18,7 @@ var documents = [{
     "id": 3,
     "url": "http://localhost:4000/",
     "title": "Home",
-    "body": " Art by Megan   Watercolor art by Megan Naccarato     Items for Sale:                                                                                                                                                                                        Custom Watercolor Family Portraits              :               An 8” x 10” watercolor piece on high quality watercolor paper. A simple and unique way of capturing your family and the perfect gift for. . . :                                                All Projects:                              Spiderman - Watercolor   :                                           Thor - Watercolor   :                                           Hawkeye - Watercolor   :                                           Black Widow - Watercolor   :                                           Captain America - Watercolor   :                                           Iron Man - Watercolor   :                       "
+    "body": " Art by Megan   Watercolor art by Megan Naccarato     Featured:                                                                                                                                                                                        Custom Watercolor Family Portraits              :               An 8” x 10” watercolor piece on high quality watercolor paper. A simple and unique way of capturing your family and the perfect gift for. . . :                                                All Projects:                              Spiderman   :                     :                              Thor   :                     :                              Hawkeye   :                     :                              Black Widow   :                  Watercolor   :                              Captain America   :                     :                              Iron Man   :                     :          "
     }, {
     "id": 4,
     "url": "http://localhost:4000/robots.txt",
@@ -27,36 +27,36 @@ var documents = [{
     }, {
     "id": 5,
     "url": "http://localhost:4000/spiderman-watercolor/",
-    "title": "Spiderman - Watercolor",
+    "title": "Spiderman",
     "body": "2019/06/12 - "
     }, {
     "id": 6,
     "url": "http://localhost:4000/thor-watercolor/",
-    "title": "Thor - Watercolor",
+    "title": "Thor",
     "body": "2019/06/11 - "
     }, {
     "id": 7,
     "url": "http://localhost:4000/hawkeye-watercolor/",
-    "title": "Hawkeye - Watercolor",
+    "title": "Hawkeye",
     "body": "2019/06/11 - "
     }, {
     "id": 8,
     "url": "http://localhost:4000/black-widow-watercolor/",
-    "title": "Black Widow - Watercolor",
+    "title": "Black Widow",
     "body": "2019/06/11 - Watercolor "
     }, {
     "id": 9,
     "url": "http://localhost:4000/captain-america-watercolor/",
-    "title": "Captain America - Watercolor",
+    "title": "Captain America",
     "body": "2019/06/10 - "
     }, {
     "id": 10,
     "url": "http://localhost:4000/iron-man-watercolor/",
-    "title": "Iron Man - Watercolor",
+    "title": "Iron Man",
     "body": "2019/06/07 - "
     }, {
     "id": 11,
-    "url": "http://localhost:4000/quick-start-guide/",
+    "url": "http://localhost:4000/custom-watercolor-family-portraits/",
     "title": "Custom Watercolor Family Portraits",
     "body": "2018/01/11 - An 8” x 10” watercolor piece on high quality watercolor paper. A simple and unique way of capturing your family and the perfect gift for someone special! Send me the picture you want painted , and I’ll create an 8” x 10” watercolor portrait. Details  Handmade item Made to order Shipping availableTo place an order send me your information here. "
     }];

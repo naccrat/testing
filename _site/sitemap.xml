@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/quick-start-guide/</loc>
+<loc>http://localhost:4000/custom-watercolor-family-portraits/</loc>
 <lastmod>2018-01-11T00:00:00-07:00</lastmod>
 </url>
 <url>
@@ -47,10 +47,13 @@
 <loc>http://localhost:4000/category/watercolor/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/category/captain-america/</loc>
+<loc>http://localhost:4000/category/iron-man/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/category/marvel/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/category/captain-america/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/category/black-widow/</loc>
