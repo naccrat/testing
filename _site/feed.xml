@@ -5,9 +5,94 @@
     <description>Watercolor art by Megan Naccarato</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 07 Jun 2019 15:56:08 -0600</pubDate>
-    <lastBuildDate>Fri, 07 Jun 2019 15:56:08 -0600</lastBuildDate>
+    <pubDate>Wed, 12 Jun 2019 12:52:08 -0600</pubDate>
+    <lastBuildDate>Wed, 12 Jun 2019 12:52:08 -0600</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>Spiderman - Watercolor</title>
+        <description>
+</description>
+        <pubDate>Wed, 12 Jun 2019 00:00:00 -0600</pubDate>
+        <link>http://localhost:4000/spiderman-watercolor/</link>
+        <guid isPermaLink="true">http://localhost:4000/spiderman-watercolor/</guid>
+        
+        
+        <category>Spiderman</category>
+        
+        <category>Marvel</category>
+        
+        <category>Watercolor</category>
+        
+      </item>
+    
+      <item>
+        <title>Thor - Watercolor</title>
+        <description>
+</description>
+        <pubDate>Tue, 11 Jun 2019 00:00:00 -0600</pubDate>
+        <link>http://localhost:4000/thor-watercolor/</link>
+        <guid isPermaLink="true">http://localhost:4000/thor-watercolor/</guid>
+        
+        
+        <category>Thor</category>
+        
+        <category>Watercolor</category>
+        
+        <category>Marvel</category>
+        
+      </item>
+    
+      <item>
+        <title>Hawkeye - Watercolor</title>
+        <description>
+</description>
+        <pubDate>Tue, 11 Jun 2019 00:00:00 -0600</pubDate>
+        <link>http://localhost:4000/hawkeye-watercolor/</link>
+        <guid isPermaLink="true">http://localhost:4000/hawkeye-watercolor/</guid>
+        
+        
+        <category>Hawkeye</category>
+        
+        <category>Marvel</category>
+        
+        <category>Watercolor</category>
+        
+      </item>
+    
+      <item>
+        <title>Black Widow - Watercolor</title>
+        <description>
+</description>
+        <pubDate>Tue, 11 Jun 2019 00:00:00 -0600</pubDate>
+        <link>http://localhost:4000/black-widow-watercolor/</link>
+        <guid isPermaLink="true">http://localhost:4000/black-widow-watercolor/</guid>
+        
+        
+        <category>Marvel</category>
+        
+        <category>Black Widow</category>
+        
+        <category>Watercolor</category>
+        
+      </item>
+    
+      <item>
+        <title>Captain America - Watercolor</title>
+        <description>
+</description>
+        <pubDate>Mon, 10 Jun 2019 00:00:00 -0600</pubDate>
+        <link>http://localhost:4000/captain-america-watercolor/</link>
+        <guid isPermaLink="true">http://localhost:4000/captain-america-watercolor/</guid>
+        
+        
+        <category>Watercolor</category>
+        
+        <category>Captain America</category>
+        
+        <category>Marvel</category>
+        
+      </item>
     
       <item>
         <title>Iron Man - Watercolor</title>

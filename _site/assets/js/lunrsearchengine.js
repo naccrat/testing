@@ -7,8 +7,8 @@ var documents = [{
     }, {
     "id": 1,
     "url": "http://localhost:4000/about",
-    "title": "Mediumish Template for Jekyll",
-    "body": "  This website is built with Jekyll and Mediumish template for Jekyll. It's for demonstration purposes, no real content can be found. Mediumish template for Jekyll is compatible with Github pages, in fact even this demo is created with Github Pages and hosted with Github.  Documentation: Please, read the docs here. Questions or bug reports?: Head over to our Github repository!   Buy me a coffeeThank you for your support! Your donation helps me to maintain and improve Mediumish . Buy me a coffee Documentation"
+    "title": "About",
+    "body": "My name is Megan Naccarato and I have always loved art. I started creating with watercolors a few years ago and fell in love with the process. I really enjoy creating family portraits and character art like Marvel and Star Wars characters.   You can also find me on Instagram, Pinterest, Dribbble. "
     }, {
     "id": 2,
     "url": "http://localhost:4000/categories",
@@ -18,7 +18,7 @@ var documents = [{
     "id": 3,
     "url": "http://localhost:4000/",
     "title": "Home",
-    "body": "   Items for Sale:                                                                                                                                                                                   Custom Watercolor Family Portraits              :               An 8” x 10” watercolor piece on high quality watercolor paper. A simple and unique way of capturing your family and the perfect gift for. . . :                                                All Projects:                              Iron Man - Watercolor   :             "
+    "body": " Art by Megan   Watercolor art by Megan Naccarato     Items for Sale:                                                                                                                                                                                        Custom Watercolor Family Portraits              :               An 8” x 10” watercolor piece on high quality watercolor paper. A simple and unique way of capturing your family and the perfect gift for. . . :                                                All Projects:                              Spiderman - Watercolor   :                                 Thor - Watercolor   :                                 Hawkeye - Watercolor   :                                 Black Widow - Watercolor   :                                 Captain America - Watercolor   :                                 Iron Man - Watercolor   :             "
     }, {
     "id": 4,
     "url": "http://localhost:4000/robots.txt",
@@ -26,11 +26,36 @@ var documents = [{
     "body": "      Sitemap: {{ “sitemap. xml”   absolute_url }}   "
     }, {
     "id": 5,
+    "url": "http://localhost:4000/spiderman-watercolor/",
+    "title": "Spiderman - Watercolor",
+    "body": "2019/06/12 - "
+    }, {
+    "id": 6,
+    "url": "http://localhost:4000/thor-watercolor/",
+    "title": "Thor - Watercolor",
+    "body": "2019/06/11 - "
+    }, {
+    "id": 7,
+    "url": "http://localhost:4000/hawkeye-watercolor/",
+    "title": "Hawkeye - Watercolor",
+    "body": "2019/06/11 - "
+    }, {
+    "id": 8,
+    "url": "http://localhost:4000/black-widow-watercolor/",
+    "title": "Black Widow - Watercolor",
+    "body": "2019/06/11 - "
+    }, {
+    "id": 9,
+    "url": "http://localhost:4000/captain-america-watercolor/",
+    "title": "Captain America - Watercolor",
+    "body": "2019/06/10 - "
+    }, {
+    "id": 10,
     "url": "http://localhost:4000/iron-man-watercolor/",
     "title": "Iron Man - Watercolor",
     "body": "2019/06/07 - "
     }, {
-    "id": 6,
+    "id": 11,
     "url": "http://localhost:4000/quick-start-guide/",
     "title": "Custom Watercolor Family Portraits",
     "body": "2018/01/11 - An 8” x 10” watercolor piece on high quality watercolor paper. A simple and unique way of capturing your family and the perfect gift for someone special! Send me the picture you want painted , and I’ll create an 8” x 10” watercolor portrait. Details  Handmade item Made to order Shipping availableTo place an order send me your information here. "

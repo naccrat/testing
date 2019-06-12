@@ -2,12 +2,12 @@
 name: "Art by Megan"
 title: "Art by Megan"
 description: "Watercolor art by Megan Naccarato"
-logo: 'assets/images/'
-favicon: 'assets/images/logo.png'
-baseurl: 
-google_analytics: ''
-disqus: ''
-mailchimp-list: ''
+logo: "assets/images/"
+favicon: "assets/images/logo.png"
+baseurl: artbymegannacc.com
+google_analytics: "UA-130612692-1"
+disqus: ""
+mailchimp-list: ""
 include: ["_pages"]
 permalink: /:title/
 
@@ -16,32 +16,32 @@ authors:
   Megan:
     name: Megan
     display_name: Megan
-    gravatar: 
-    email: 
-    web: 
-    twitter: 
+    gravatar:
+    email:
+    web:
+    twitter:
     description: "My name is Megan Naccarato and I have always loved art. I started creating with watercolors a few years ago and fell in love with the process. I really enjoy creating family portraits and character art like Marvel and Star Wars characters."
 
 # Plugins
-plugins: 
+plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-archives
-    
+
 # Archives
 jekyll-archives:
   enabled:
     - categories
   layout: archive
   permalinks:
-    category: '/category/:name/'
-    
-# Pagination 
+    category: "/category/:name/"
+
+# Pagination
 paginate: 6
 paginate_path: /page:num/
-    
+
 # Other
 markdown: kramdown
 
