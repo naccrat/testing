@@ -17,6 +17,14 @@
           post.title
         }}</a>
       </h2>
+      <ul class="tags mb-4">
+        {% assign sortedCategories = page.categories | sort %}
+        {% for category in sortedCategories %}
+        <li>                        
+         <a class="smoothscroll" href="{{site.baseurl}}/categories#{{ category | replace: " ","-" }}">{{ category }}</a>
+        </li>
+        {% endfor %}
+</ul>
       <!-- <h4 class="card-text">
         {{ post.excerpt | strip_html | truncatewords: 30 }}
       </h4> -->
