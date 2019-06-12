@@ -43,7 +43,7 @@ var documents = [{
     "id": 8,
     "url": "http://localhost:4000/black-widow-watercolor/",
     "title": "Black Widow - Watercolor",
-    "body": "2019/06/11 - "
+    "body": "2019/06/11 - Watercolor "
     }, {
     "id": 9,
     "url": "http://localhost:4000/captain-america-watercolor/",
