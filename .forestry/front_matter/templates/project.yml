@@ -23,4 +23,5 @@ fields:
   hidden: true
   default: post
 pages:
+- _posts/rey.md
 - _posts/a-rebellion-built-on-hope.md
