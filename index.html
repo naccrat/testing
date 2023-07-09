@@ -1,50 +1,134 @@
 ---
 layout: default
-title: Home
+title: Welcome to our Design Agency in Salt Lake City, where creativity meets functionality!
+services: Website Design, App Design, Branding & Logos
+meta_description: Transform your brand with cutting-edge design in Salt Lake City. Our Design Agency delivers stunning websites, user friendly apps, and memorable logos and branding solutions. From website design to app development, we offer comprehensive digital solutions tailored to your business. Let our design expertise showcase your brand's unique identity. Discover the power of exceptional design in Salt Lake City today.
+
+main-image:
 ---
-
-{% if page.url == "/" %}
-
-<!-- Site Title
-================================================== -->
-<div class="mainheading">
-  <h1 class="sitetitle">{{ site.name }}</h1>
-  <p class="lead">
-    {{ site.description }}
-  </p>
+<div class="py-vh-5 w-100 bg-gray-900 text-light overflow-hidden">
+  <div class="container">
+    <div class="row d-flex justify-content-center">
+      <div class="col-lg-10 aos-init aos-animate" data-aos="fade-down">
+        <h2 class="display-6 text-center">We specialize in crafting stunning website designs, creating user friendly mobile apps, and memorable logos designs and branding. We'll help you establish a distinctive identity that resonates with your target market.</h2>
+      </div>
+    </div>
+  </div>
 </div>
 
-<!-- Featured
-================================================== -->
-<section class="featured-posts">
-  <div class="section-title">
-    <h2><span>Featured</span></h2>
+<div class="py-vh-4 w-100 overflow-hidden" id="aboutus">
+  <div class="container">
+    <div class="row d-flex justify-content-between align-items-center">
+      <div class="col-lg-6">
+        <div class="row gx-5 d-flex">
+          <div class="col-md-11">
+            <div class="shadow ratio ratio-16x9 rounded bg-cover bp-center align-self-end aos-init aos-animate" data-aos="fade-right" style="background-image: url(img/webp/people15.webp);--bs-aspect-ratio: 50%;">
+            </div>
+          </div>
+          <div class="col-md-5 offset-md-1">
+            <div class="shadow ratio ratio-1x1 rounded bg-cover mt-5 bp-center float-end aos-init aos-animate" data-aos="fade-up" style="background-image: url(img/webp/interior42.webp);">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="col-12 shadow ratio rounded bg-cover mt-5 bp-center aos-init aos-animate" data-aos="fade-left" style="background-image: url(img/webp/people4.webp);--bs-aspect-ratio: 150%;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        {% include form.html %}
+      </div>
+    </div>
   </div>
-  <div class="row">
-    {% for post in site.posts %} {% if post.featured == true %} {% include
-    featuredbox.html %} {% endif %} {% endfor %}
+</div>
+
+<div class="w-100 bg-gray-100 overflow-hidden" id="projects">
+  <div class="container py-vh-5">
+    <div class="row d-flex justify-content-center">
+      <div class="col-12 col-lg-10 col-xl-8 text-center">
+        <h2 class="display-6">View some of our recent projects</h2>
+        <p class="lead">From website design to branding, we can help your company look great.</p>
+      </div>
+      <div class="col-12 mt-4">
+        <div class="row row-cols-1 row-cols-md-2 g-3 d-flex align-items-center">
+          {% for project in site.projects reversed %}
+          <div class="col-12 col-lg-6 col-xl-4">
+            <div class="card border-0">
+              <div class="card-body">
+                <!-- <a href="{{ project.url }}" class="text-decoration-none"> -->
+                <img src="img/projects/{{ project.featured_image }}" width="100%">
+                <div class="d-flex justify-content-between px-4 mt-3 mb-4">
+                  <p class="card-text">
+                    <span class="h6 fw-5">{{ project.title }}</span><br>
+                    <small class="text-muted">{{ project.subtitle }}</small>
+                  </p>
+                </div>
+                <!-- </a> -->
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
   </div>
-</section>
+</div>
 
-{% endif %}
+<div class="small py-vh-3 w-100 overflow-hidden">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-lg-4 border-end aos-init aos-animate" data-aos="fade-up">
+        <div class="d-flex">
+          
+          <div class="col-md-12 p-3">
+            <h3 class="h5 my-2">Website Design</h3>
+            <ul>
+              <li>Our team of skilled designers will bring your vision to life, creating a user-friendly and visually appealing website that captures your brand's essence.</li>
+              <li>We prioritize responsive design, ensuring your site looks great and functions flawlessly on any device.</li>
+              <li>From e-commerce platforms to informational websites, we tailor our designs to meet your unique business goals.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 border-end aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+        <div class="d-flex">
+          <div class="col-md-12 p-3">
+            <h3 class="h5 my-2">App Design</h3>
+            <ul>
+              <li>Looking to conquer the mobile market? Our talented app designers will craft intuitive and engaging mobile applications that captivate your audience.
+              </li>
+              <li>We focus on user experience, ensuring seamless navigation and interactive features that keep users coming back for more.</li>
+              <li>Whether it's iOS or Android, we've got you covered with versatile app designs that make a lasting impact.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
-<!-- Posts Index
-================================================== -->
-<section class="recent-posts">
-  <div class="section-title">
-    <h2><span>All Projects</span></h2>
+      <div class="col-md-6 col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+        <div class="d-flex">
+          <div class="col-md-12 p-3">
+            <h3 class="h5 my-2">Branding & Logos</h3>
+            <ul>
+              <li>Your brand identity is crucial in today's competitive market. Our branding experts will help you establish a unique and memorable brand that resonates with your target audience.</li>
+              <li>We create visually compelling logos, captivating brand guidelines, and engaging marketing collateral that amplify your brand's message.</li>
+              <li>With our branding strategies, you'll build brand loyalty and stand out from the crowd.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </div>
+</div>
 
-  <div class="row listrecent">
-    {% for post in paginator.posts %} {% include postbox.html %} {% endfor %}
+<!-- Section -->
+<div class="py-vh-2 w-100 bg-gray-100 overflow-hidden">
+  <div class="container">
+    <div class="row d-flex justify-content-center align-items-center">
+      <div class="col-lg-8">
+        <h2 class="py-3">Something Else</h2>
+        <p>Tree pruning is an important part of maintaining healthy and beautiful trees. Our tree pruning service will promote healthy growth, prevent disease, and reduce safety hazards.</p>
+      </div>
+    </div>
   </div>
-</section>
-
-<!-- Pagination
-================================================== -->
-<div class="bottompagination">
-  <div class="pointerup"><i class="fa fa-caret-up"></i></div>
-  <span class="navigation" role="navigation">
-    {% include pagination.html %}
-  </span>
 </div>

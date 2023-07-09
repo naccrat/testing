@@ -1,0 +1,54 @@
+<nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+  <div class="container">
+    <a class="navbar-brand pe-4" href="/">
+      {% if site.logo %}
+      <img src="{{ site.url }}/img/{{ site.logo }}" width="{{ site.logo-width }}" alt="{{ site.title }}">
+      {% else %}
+      <span class="ms-1">{{ site.title }}</span>
+      {% endif %}
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        {% assign links = site.data.settings.menu_settings %}
+          {% for link in links %}
+            {% assign class = nil %}
+              {% if page.url contains link.url %}
+                  {% assign class = 'active' %}
+              {% endif %}
+            {% if link.sublinks %}
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle {{ class }}" href="{{ site.url }}{{ site.baseurl }}{{ link.url }}" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                {{ link.title }}
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  {% for sublink in link.sublinks %}
+                    {% if sublink.title == 'separator' %}
+                      <li role="separator" class="divider py-2"></li>
+                      {% else %}
+                      <li class="py-2">
+                        <a class="dropdown-item" href="{{ site.url }}{{ site.baseurl }}{{ sublink.url }}">
+                          {{ sublink.title }}
+                        </a>
+                      </li>
+                    {% endif %}
+                  {% endfor %}
+                </ul>
+              </li>
+              {% else %}
+              <li class="nav-item">
+                <a class="nav-link {{ class }}" href="{{ site.url }}{{ site.baseurl }}{{ link.url }}">
+                  {{ link.title }}
+                </a>
+              </li>
+            {% endif %}
+        {% endfor %}
+      </ul>
+      <a href="tel:{{ site.phone }}" data-splitbee-event="Call Us" aria-label="Call Us {{ site.phone }}" class="btn btn-custom-secondary px-3 py-2">
+        {{ site.phone }}
+      </a>
+    </div>
+  </div>
+</nav>

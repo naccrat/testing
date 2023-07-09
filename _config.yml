@@ -1,58 +1,66 @@
-# Site
-name: "Art by Megan"
-title: "Art by Megan"
-description: "Watercolor art by Megan Naccarato"
-logo: "assets/images/"
-favicon: "assets/images/logo.png"
-baseurl: artbymegannacc.com
-google_analytics: "UA-130612692-1"
-disqus: ""
-mailchimp-list: ""
-include: ["_pages"]
-permalink: /:title/
+url: 
+title: 325 Studio
+phone: (385) 503-3663
+logo: 
+logo-width:
 
-# Authors
-authors:
-  Megan:
-    name: Megan
-    display_name: Megan
-    gravatar:
-    email:
-    web:
-    twitter:
-    description: "My name is Megan Naccarato and I have always loved art. I started creating with watercolors a few years ago and fell in love with the process. I really enjoy creating family portraits and character art like Marvel and Star Wars characters."
+google-analytics: G-YYTPFMV119
+site-author: Tony Naccarato
 
-# Plugins
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-archives
+category-list: [services]
 
-# Archives
-jekyll-archives:
-  enabled:
-    - categories
-  layout: archive
-  permalinks:
-    category: "/category/:name/"
+# Privacy Policy and Terms of Service page
+state: Utah
 
-# Pagination
-paginate: 6
-paginate_path: /page:num/
+# Custom Navbar Colors
+navbar-colors:
+  bg: "#ffffff"
+  menu-color: "#000000"
 
-# Other
-markdown: kramdown
+# Custom button
+btn-custom-primary:
+  text-color: "#ffffff"
+  bg: "#000000"
+  border-color: "#000000"
+  hover-text-color: "#ffffff"
+  hover-bg: "#3f3f3f"
+  hover-border-color: "#3f3f3f"
 
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    block:
-      line_numbers: true
+btn-custom-secondary:
+  text-color: "#000000"
+  bg: "#ffffff"
+  border-color: "#ffffff"
+  hover-text-color: "#000000"
+  hover-bg: "#dddddd"
+  hover-border-color: "#dddddd"
 
-# Adsense (change to "enabled" to activate, also your client id and ad slot. Create a new ad unit from your Adsense account to get the slot.)
-adsense: "disabled"
-adsense-data-ad-client: ""
-adsense-data-ad-slot: ""
+btn-border-radius: "4px"
+
+# Background color for the call to action box
+cta:
+  bg: "#d8e6df"
+
+# Background color for the form submission box 
+form: 
+  bg: "#229155"
+
+collections:
+  projects:
+    output: true
+    permalink: /project/:slug
+
+# Local Business Schema
+schema:
+  # name: Same as title above
+  image: 
+  # telephone: Same as phone above
+  priceRange: "$"
+  address:
+    city: "Salt Lake City"
+    state: "Utah"
+    country: "USA"
+    postalCode: "84101"
+  hours:
+    dayOfWeek: "Monday-Saturday"
+  # url: Same as url above
+# End Schema

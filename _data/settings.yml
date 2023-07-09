@@ -1,0 +1,33 @@
+basic_settings:
+  title: 325 Studio
+  phone: (385) 503-3663 
+  logo: 
+  logo-width:
+  google_analytics: UA-412496-3
+
+menu_settings:
+  - title: "Home"
+    url: "/"
+  - title: "Services"
+    url: "/services/"
+  - title: "Projects"
+    url: "#projects"
+  - title: "About"
+    url: "/about/"
+  - title: "Contact"
+    url: "/contact/"
+
+font_settings:
+  font_embed: "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Mulish:wght@300;400;500;700&display=swap" 
+  title_font: 'Mulish'
+  body_font: 'Inter'
+
+social_settings:
+  facebook_url: 'https://www.facebook.com/325studio/'
+  twitter_url: ''
+  instagram_url: ''
+  youtube_url: ''
+  medium_url: ''
+  dribbble_url: ''
+  github_url: ''
+  linkedin_url: ''

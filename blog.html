@@ -1,0 +1,25 @@
+---
+layout: page
+title: Latest Articles
+permalink: /blog/
+meta_description: Blog articles for Affordable Tree Services Miami
+---
+
+  <div class="py-vh-5 w-100 overflow-hidden" id="services">
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="col-12 col-lg-10 col-xl-8 border-bottom border-dark pb-5 mb-5">
+          <h1 class="display-5 fw-bold pb-5">{{ page.title }}</h1>
+          <ul class="list-unstyled">
+            {% for post in site.posts %}
+              <li>
+                <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                {{ post.excerpt }}
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+

@@ -1,70 +1,187 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-<loc>http://localhost:4000/custom-watercolor-family-portraits/</loc>
-<lastmod>2018-01-11T00:00:00-07:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/iron-man-watercolor/</loc>
-<lastmod>2019-06-07T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/captain-america-watercolor/</loc>
-<lastmod>2019-06-10T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/black-widow-watercolor/</loc>
-<lastmod>2019-06-11T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/hawkeye-watercolor/</loc>
-<lastmod>2019-06-11T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/thor-watercolor/</loc>
-<lastmod>2019-06-11T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/spiderman-watercolor/</loc>
-<lastmod>2019-06-12T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/about</loc>
-</url>
-<url>
-<loc>http://localhost:4000/categories</loc>
-</url>
-<url>
-<loc>http://localhost:4000/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/tags</loc>
-</url>
-<url>
-<loc>http://localhost:4000/category/custom/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/category/watercolor/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/category/iron-man/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/category/marvel/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/category/captain-america/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/category/black-widow/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/category/hawkeye/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/category/thor/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/category/spiderman/</loc>
-</url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+    
+    <url>
+      <loc>http://localhost:4000/2023/06/01/care-for-the-5-most-popular-trees-Miami.html</loc>
+      
+        <lastmod>2023-06-01T00:00:00-06:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+  
+    
+    <url>
+      <loc>http://localhost:4000/404.html</loc>
+      
+        <lastmod>2023-07-07T17:41:31-06:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/about/</loc>
+      
+        <lastmod>2023-07-07T17:41:31-06:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/blog/</loc>
+      
+        <lastmod>2023-07-07T17:41:31-06:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/contact/</loc>
+      
+        <lastmod>2023-07-07T17:41:31-06:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/</loc>
+      
+        <lastmod>2023-07-07T17:41:31-06:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/locations/</loc>
+      
+        <lastmod>2023-07-07T17:41:31-06:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/privacy-policy/</loc>
+      
+        <lastmod>2023-07-07T17:41:31-06:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/services/</loc>
+      
+        <lastmod>2023-07-07T17:41:31-06:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/terms-of-service/</loc>
+      
+        <lastmod>2023-07-07T17:41:31-06:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/thank-you/</loc>
+      
+        <lastmod>2023-07-07T17:41:31-06:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/css/theme.css</loc>
+      
+        <lastmod>2023-07-07T17:41:31-06:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
 </urlset>

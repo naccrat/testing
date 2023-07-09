@@ -1,0 +1,38 @@
+---
+layout: default
+permalink: /services/
+title: Services
+meta_description: Affordable Tree Services Miami can help you with all your tree services needs. Contact for any questions on our services and we'd love to work with you.
+main-image: tree-services-landscaping.jpeg
+---
+
+<div class="py-vh-3 w-100 overflow-hidden">
+  <div class="container">
+    <div class="row d-flex ">
+      <div class="col-lg-7">
+        
+        <h2 class="display-6">
+          We can help with all your tree services needs
+        </h2>
+        {% for cat in site.category-list %}  
+        <ul class="list-unstyled">
+          {% for page in site.pages %}
+            {% if page.resource == true %}
+              {% for pc in page.categories %}
+                {% if pc == cat %}
+                  <li class="py-2">
+                    <a class="link-fancy" href="{{ page.url }}">{{ page.title }}</a>
+                  </li>
+                {% endif %}   <!-- cat-match-p -->
+              {% endfor %}  <!-- page-category -->
+            {% endif %}   <!-- resource-p -->
+          {% endfor %}  <!-- page -->
+        </ul>
+        {% endfor %}  <!-- cat -->
+      </div>
+      <!-- col-lg-5 FORM-->
+      {% include form.html %}
+
+    </div>
+  </div>
+</div>

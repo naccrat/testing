@@ -1,140 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-<link rel="icon" href="/assets/images/logo.png">
-    
-<title>{{ page.title }} | {{site.name}}</title>
-        
-{% seo %}
-    
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    
-<link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,500,600%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet">
-    
-<link href="/assets/css/screen.css" rel="stylesheet">
-    
-<link href="/assets/css/main.css" rel="stylesheet">
-    
-<script src="/assets/js/jquery.min.js"></script>
-    
-</head>
-    
-{% if jekyll.environment == 'production' %}    
-<!-- change your GA id in _config.yml -->
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-ga('create', '{{site.google_analytics}}', 'auto');
-ga('send', 'pageview');
-</script>
-{% endif %}
-    
-{% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
-<body class="{{layout}}">
-
-    
-<!-- Begin Menu Navigation
-================================================== -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down">
-    
-    <div class="container pr-0">    
-    
-    <!-- Begin Logo -->
-    <a class="navbar-brand" href="/">
-    <!-- <img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}"> -->
-    {{ site.name }}
-    </a>
-    <!-- End Logo -->
-  
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-    </button>
-    
-    
-    <div class="collapse navbar-collapse" id="navbarMediumish">
-       
-        <!-- Begin Menu -->
-        
-            <ul class="navbar-nav ml-auto">
-                
-                {% if page.url == "/" %}
-                <li class="nav-item active">
-                {% else %}
-                <li class="nav-item">
-                {% endif %}
-                <a class="nav-link" href="/index.html">Work</a>
-                </li>
-                
-                {% if page.url == "/about.html" %}
-                <li class="nav-item active">
-                {% else %}
-                <li class="nav-item">
-                {% endif %}
-                <a class="nav-link" href="/about">About</a>
-                </li>
-                
-                {% include search-lunr.html %}
-                
-            </ul>		
-        
-        
-  
-        <!-- End Menu -->
-
-    </div>
-        
-    </div>
-</nav>
-<!-- End Navigation
-================================================== -->
-    
-<div class="site-content">   
-    
-<div class="container">
-      
-    
-<!-- Content
-================================================== --> 
-<div class="main-content">
-    {{ content }}
-</div>
-
-<!-- Begin Footer
-================================================== -->
-<footer class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-sm-6 text-center text-lg-left">
-                 Copyright © {{ site.time | date: "%Y" }} {{ site.name }} • You can also find me on <a href="https://www.instagram.com/artbymegannacc/">Instagram</a>, <a href="https://www.pinterest.com/megannacc/">Pinterest</a>, <a href="https://dribbble.com/megannacc">Dribbble</a>
-            </div>
+{% include head.html %}
+  <body data-bs-spy="scroll" data-bs-target="#navScroll">
+  {% include nav.html %}
+  <main>
+    <div class="w-100 overflow-hidden bg-gray-100">
+      <div class="container-fluid position-relative">
+        <div class="col-12 col-lg-12 mt-0 h-100 position-absolute top-0 end-0 bg-cover" style="background-color: #000; background-image: url(/img/{{ page.main-image }}); opacity: 0.3;">
         </div>
+        <div class="container">
+          <div class="col-lg-10 py-vh-5 position-relative">
+            <h1 class="display-3 fw-bold mt-5">{{ page.title }}</h1>
+            <p class="lead">{{ page.services }}</p>
+            <a class="btn btn-custom-primary btn-xl shadow me-1 my-1" href="tel:{{ site.phone }}">
+              {{ site.phone }}
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-</footer>
-<!-- End Footer
-================================================== -->
-
-   
-</div> <!-- /.site-content -->
-
-<!-- Scripts
-================================================== -->
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-    
-<script src="/assets/js/mediumish.js"></script>
-
-<script src="/assets/js/ie10-viewport-bug-workaround.js"></script> 
-    
-<script id="dsq-count-scr" src="//{{site.disqus}}.disqus.com/count.js"></script>
-    
-</body>
+    {{ content }}
+  </main>
+  {% include footer.html %}
+  </body>
 </html>
+ 
