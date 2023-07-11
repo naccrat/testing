@@ -3005,20 +3005,20 @@ textarea.form-control-lg {
   display: block; }
 
 .navbar-custom { 
-  background-color: {{ site.navbar-colors.bg }}; }
+  background-color: {{ site.data.settings.navbar_colors.bg }}; }
 
 .navbar {
   --bs-navbar-padding-x: 0;
   --bs-navbar-padding-y: 0.5rem;
-  --bs-navbar-color: {{ site.navbar-colors.menu-color }};
-  --bs-navbar-hover-color: {{ site.navbar-colors.menu-hover-color }};
+  --bs-navbar-color: {{ site.data.settings.navbar_colors.menu_color }};
+  --bs-navbar-hover-color: {{ site.data.settings.navbar_colors.menu_hover_color }};
   --bs-navbar-disabled-color: rgba(21, 21, 21, 0.3);
-  --bs-navbar-active-color: {{ site.navbar-colors.active-color }};
+  --bs-navbar-active-color: {{ site.data.settings.navbar_colors.active_color }};
   --bs-navbar-brand-padding-y: 0.3125rem;
   --bs-navbar-brand-margin-end: 1rem;
   --bs-navbar-brand-font-size: 1.25rem;
-  --bs-navbar-brand-color: {{ site.navbar-colors.menu-color }};
-  --bs-navbar-brand-hover-color: {{ site.navbar-colors.menu-hover-color }};
+  --bs-navbar-brand-color: {{ site.data.settings.navbar_colors.brand_menu_color }};
+  --bs-navbar-brand-hover-color: {{ site.data.settings.navbar_colors.brand_menu_hover_color }};
   --bs-navbar-nav-link-padding-x: 0.5rem;
   --bs-navbar-toggler-padding-y: 0.25rem;
   --bs-navbar-toggler-padding-x: 0.75rem;
@@ -9096,10 +9096,10 @@ img {
   background-position: center center; }
 
 .bg-cta-custom {
-  background-color: {{ site.cta.bg }}; }
+  background: {{ site.data.settings.cta.bg }}; }
 
 .bg-form-custom {
-  background-color: {{ site.form.bg }};
+  background-color: {{ site.data.settings.form.bg }};
   border-radius: {{ site.btn-border-radius }}; }
 
 .bg-gray-100 {

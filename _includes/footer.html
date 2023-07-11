@@ -9,7 +9,7 @@
         {% else %}
         <h3 class="h6 mb-3"><a href="{{ site.url }}" class="text-decoration-none">{{ site.title }}</a></h3>
         {% endif %}
-        <p>Salt Lake City, Utah</p>
+        <p>{{ site.data.settings.basic_settings.location }}</p>
         <address class="text-secondary mt-3">
           <a href="tel:{{ site.data.settings.basic_settings.phone }}" class="btn btn-custom-primary mt-1">
           {{ site.phone }}</a>
@@ -51,7 +51,7 @@
         <ul class="socials">
           {% for url in site.data.settings.social_settings %}
           {% if url[1] != '' %}
-          <li class="socials__item">
+          <li class="list-unstyled socials__item">
             <a href="{{ url[1] }}" target="_blank" class="socials__item__link" title="{{ url[0] | remove: '_url' | replace: '-', ' ' | capitalize }}">
               <i class="fab fa-{{ url[0] | replace: 'facebook', 'facebook-f' | remove: '_url' }}" aria-hidden="true"></i>
             </a>

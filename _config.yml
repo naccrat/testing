@@ -14,8 +14,8 @@ state: Utah
 
 # Custom Navbar Colors
 navbar-colors:
-  bg: "#ffffff"
-  menu-color: "#000000"
+  bg: "#rgba(255, 255, 255, 1)"
+  menu_color: "#000000"
 
 # Custom button
 btn-custom-primary:
@@ -35,14 +35,6 @@ btn-custom-secondary:
   hover-border-color: "#dddddd"
 
 btn-border-radius: "4px"
-
-# Background color for the call to action box
-cta:
-  bg: "#d8e6df"
-
-# Background color for the form submission box 
-form: 
-  bg: "#229155"
 
 collections:
   projects:
